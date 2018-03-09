@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E29FD1D-1908-4A5B-9F50-11DAF48C4A99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfaz</RootNamespace>
+    <AssemblyName>Interfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\..\..\Documents\Visual Studio 2015\Projects\Aerolinea\Aerolinea\dll\GMap\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\..\..\Documents\Visual Studio 2015\Projects\Aerolinea\Aerolinea\dll\GMap\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormCargar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCargar.Designer.cs">
+      <DependentUpon>FormCargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCiudades.Designer.cs">
+      <DependentUpon>FormCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstadisticas.Designer.cs">
+      <DependentUpon>FormEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFiltro.Designer.cs">
+      <DependentUpon>FormFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMapa.Designer.cs">
+      <DependentUpon>FormMapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSolucionarTodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSolucionarTodo.Designer.cs">
+      <DependentUpon>FormSolucionarTodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSolucionViajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSolucionViajero.Designer.cs">
+      <DependentUpon>FormSolucionViajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkFuerzaBrutaTodos.cs" />
+    <Compile Include="workInsercionTodo.cs" />
+    <Compile Include="WorkKruskalTodo.cs" />
+    <EmbeddedResource Include="FormCargar.resx">
+      <DependentUpon>FormCargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCiudades.resx">
+      <DependentUpon>FormCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstadisticas.resx">
+      <DependentUpon>FormEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFiltro.resx">
+      <DependentUpon>FormFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMapa.resx">
+      <DependentUpon>FormMapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSolucionarTodo.resx">
+      <DependentUpon>FormSolucionarTodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSolucionViajero.resx">
+      <DependentUpon>FormSolucionViajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dll\GMap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mundo\Mundo.csproj">
+      <Project>{8fe427ad-f020-4826-b2f7-55c50afb9f3e}</Project>
+      <Name>Mundo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Img\cargandoSoluciones.gif" />
+    <Content Include="bin\Debug\Img\fondo.png" />
+    <Content Include="bin\Debug\Img\cargando4.gif" />
+    <Content Include="bin\Debug\Img\cargando2.gif" />
+    <Content Include="bin\Debug\Img\cargando3.gif" />
+    <Content Include="bin\Debug\Img\loading.gif" />
+    <Content Include="bin\Debug\Img\play.png" />
+    <Content Include="bin\Debug\Img\stop.png" />
+    <Content Include="Resources\stop1.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\cargandoSoluciones.gif" />
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

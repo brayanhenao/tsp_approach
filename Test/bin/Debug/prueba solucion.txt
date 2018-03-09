@@ -1,0 +1,5 @@
+1	Aaberg	Aaron	ad_andorra la vella,ad_canillo
+2	Aaberg	Adelaide	ad_andorra la vella, ad_canillo,af_sharan,af_uruzgan,ag_all saints
+3	Aaberg	Adriene	ee_kilingi-nomme
+4	Aaberg	Aja	us_teaneck
+5	Aaberg	Alda	sn_kanel
