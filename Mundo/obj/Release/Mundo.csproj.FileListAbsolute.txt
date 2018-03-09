@@ -1,0 +1,4 @@
+D:\Descargas\Agente Viajero 3.6\Agente Viajero\Agente Viajero\Mundo\bin\Release\Mundo.dll
+D:\Descargas\Agente Viajero 3.6\Agente Viajero\Agente Viajero\Mundo\bin\Release\Mundo.pdb
+D:\Descargas\Agente Viajero 3.6\Agente Viajero\Agente Viajero\Mundo\obj\Release\Mundo.dll
+D:\Descargas\Agente Viajero 3.6\Agente Viajero\Agente Viajero\Mundo\obj\Release\Mundo.pdb
